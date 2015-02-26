@@ -15,7 +15,7 @@
   <% @people.each do |person| %>
     <tr>
       <td>
-        <%= person.title %> <%=link_to person.full_name,  %> 
+        <%= person.title %> <%=link_to person.full_name, person_path(person) %> 
       </td>
     </tr>
   <% end %>

@@ -1,0 +1,24 @@
+<div class="page-header">
+  <div class="pull-right">
+    <%= link_to "Add Location", location_people_path, class: "pull-right btn btn-info" %>
+  </div>
+  <h1>@person.full_name</h1>
+</div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Location</th>
+    <th>Role</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <% @people.each do |person| %>
+    <tr>
+      <td><%= person.location %></td>
+      <td><%= person.title %></td> 
+    </tr>
+  <% end %>
+  </tbody>
+</table>
